@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "autoaim",
+  "version": "${version}",
+  "name": "Auto Aim",
+  "description": "Client-side aim lock. Toggle with a keybind; locks onto players first, then the closest mob within range.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.autoaim.AutoAimClient"]
+  },
+  "mixins": [
+    { "config": "autoaim.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
